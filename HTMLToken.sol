@@ -8,7 +8,7 @@ contract HTMLToken {
     string public name = 'My New Token'; // Change it to your Token Name.
     string public symbol = 'MNT'; // Change it to your Token Symbol. Max 4 letters!
 
-    uint8 public decimals = 8; // it's recommended to set decimals to 8.
+    uint8 public decimals = 8; // It's recommended to set decimals to 8.
     
     uint256 public totalSupply = 1000000; // Change it to the Total Supply of your Token.
 
@@ -17,9 +17,6 @@ contract HTMLToken {
 
     // This generates a public event on the blockchain that will notify clients
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
-
-    // This generates a public event on the blockchain that will notify clients
-    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
     /**
      * Constructor function
