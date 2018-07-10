@@ -7,6 +7,8 @@ contract HTMLToken {
 
     string public name = 'My New Token'; // Change it to your Token Name.
     string public symbol = 'MNT'; // Change it to your Token Symbol. Max 4 letters!
+    
+    string public standard = 'Token 0.1'; // Do not change this one.
 
     uint8 public decimals = 8; // It's recommended to set decimals to 8.
     
