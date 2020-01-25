@@ -1,9 +1,9 @@
-pragma solidity ^0.4.20;
+pragma solidity ^0.4.21;
 
 /**
     HRC20Token Standard Token implementation
 */
-contract HTMLToken {
+contract HRC20 {
 
     string public name = 'My New Token'; // Change it to your Token Name.
     string public symbol = 'MNT'; // Change it to your Token Symbol. Max 4 letters!
@@ -25,7 +25,7 @@ contract HTMLToken {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    constructor() public {
+    function HRC20() public {
         totalSupply =  totalSupply * 10 ** uint256(decimals); // Update total supply with the decimal amount
 
         balanceOf[msg.sender] = totalSupply; // Give the creator all initial tokens
